@@ -8,7 +8,7 @@ while True:
 	try: 
 		number=input('Enter a number:  ')	#Getting input
 		if(number)=='done': break			#stop getting input if input is 'done'
-		number=int(number)
+		number=int(float(number))
 
 		#To update largest_so_far
 		if (largest_so_far is None): largest_so_far=number
