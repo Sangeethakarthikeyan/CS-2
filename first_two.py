@@ -1,4 +1,4 @@
-#function definition of make_abba
+#function definition of first_two
 def firat_two(a):
 	return a[0:2]
 
