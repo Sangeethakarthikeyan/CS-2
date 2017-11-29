@@ -33,3 +33,4 @@ for line in fhand:
 	field=line.split()			#splitting into different fields with | as a separator
 	if field[0]==str(acyear):	# For the required academic year
 		fout.write("The class size of Yr {} in the year {} is {}".format(year,acyear,field[year+1]))  # field[year+1] has the data for the required year 
+fout.close()
