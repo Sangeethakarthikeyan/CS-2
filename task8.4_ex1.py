@@ -4,9 +4,11 @@ def chop(t):
 
 # Function definition of middle. Returns a new list. Argument unmodified
 def middle(t):
-	return t[1:len(t)-1]
+	del t[0]
+	del t[len(t)-1]
+	return t
+	
 
 num_list=[1,2,3,4,5]
-print('output of chop: ', chop(num_list))  	
+print('output of chop: ', chop(num_list))  
 print('output of middle: ', middle(num_list))
-print('Original list: ', num_list)
