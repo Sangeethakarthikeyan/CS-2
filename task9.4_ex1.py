@@ -1,4 +1,11 @@
-fhandle=open('romeo.txt')
+import sys
+
+try:
+	fhandle=open('romeo.txt')
+except:
+	print('File cannot be opened')
+	sys.exit()
+
 sample=dict()				# sample is the name of the empty dictionary
 for line in fhandle:
 	line=line.rstrip()		# To avoid \n at the end of each line
@@ -8,4 +15,7 @@ for line in fhandle:
 print(sample)
 
 check=input('\n \n Enter a word to be checked if in dictionary or not: ')  
-print(check in sample)
+print(check in sample)    # True if word exists and False if not
+
+
+
